@@ -1,0 +1,28 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define USER_NAME @"username"
+#define USER_ID @"userId"
+#define iPhone_STORYBOARD @"Main_iPhone"
+#define iPad_STORYBOARD @"Main_iPad"
+#define MAIN_TAB_VIEWCONTROLLER @"MainTabViewController"
+#define FIRST_LOGIN_VIEWCONTROLLER @"FirstLoginViewController"
+#define GESTURE_LOGIN_VIEWCONTROLLER @"GestureLoginViewController"
+
+#define API_URL @"https://api.ezendai.com/hera"
+
+#import "ZDAppDelegate.h"

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ContactRecord" representedClassName="ContactRecord" syncable="YES">
+        <attribute name="contactNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactRecordId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hope" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES">
+        <attribute name="cdHope" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactRecordId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CustomerProduct" syncable="YES">
+        <attribute name="customerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feContractNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manageFee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProductDetail" syncable="YES">
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="gesturePassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContactRecord" positionX="-54" positionY="72" width="128" height="163"/>
+        <element name="Customer" positionX="-63" positionY="9" width="128" height="178"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="CustomerProduct" positionX="-54" positionY="90" width="128" height="118"/>
+        <element name="ProductDetail" positionX="-45" positionY="99" width="128" height="58"/>
+    </elements>
+</model>

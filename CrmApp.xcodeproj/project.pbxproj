@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18AE6D731981AFF4004CA597 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AE6D711981AFF4004CA597 /* Main_iPad.storyboard */; };
+		18AE6D761981DBAE004CA597 /* ZDAppDelegate+MOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE6D751981DBAE004CA597 /* ZDAppDelegate+MOC.m */; };
+		18AE6D7A1981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18AE6D781981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld */; };
+		18AE6D7F1981FCFB004CA597 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE6D7E1981FCFB004CA597 /* CoreData.framework */; };
+		18AE6D871982D98A004CA597 /* ZDCrmRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE6D861982D98A004CA597 /* ZDCrmRepository.m */; };
+		18B976A5197D95BC00641204 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A4197D95BC00641204 /* Foundation.framework */; };
+		18B976A7197D95BC00641204 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A6197D95BC00641204 /* CoreGraphics.framework */; };
+		18B976A9197D95BC00641204 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A8197D95BC00641204 /* UIKit.framework */; };
+		18B976AF197D95BC00641204 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B976AD197D95BC00641204 /* InfoPlist.strings */; };
+		18B976B1197D95BC00641204 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976B0197D95BC00641204 /* main.m */; };
+		18B976B5197D95BC00641204 /* ZDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976B4197D95BC00641204 /* ZDAppDelegate.m */; };
+		18B976B8197D95BC00641204 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B976B6197D95BC00641204 /* Main_iPhone.storyboard */; };
+		18B976BE197D95BC00641204 /* ZDPotentialCustomersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976BD197D95BC00641204 /* ZDPotentialCustomersListViewController.m */; };
+		18B976C1197D95BC00641204 /* ZDBusinessesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976C0197D95BC00641204 /* ZDBusinessesListViewController.m */; };
+		18B976C3197D95BC00641204 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B976C2197D95BC00641204 /* Images.xcassets */; };
+		18B976CA197D95BC00641204 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976C9197D95BC00641204 /* XCTest.framework */; };
+		18B976CB197D95BC00641204 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A4197D95BC00641204 /* Foundation.framework */; };
+		18B976CC197D95BC00641204 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A8197D95BC00641204 /* UIKit.framework */; };
+		18B976D4197D95BD00641204 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B976D2197D95BD00641204 /* InfoPlist.strings */; };
+		18B976D6197D95BD00641204 /* CrmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976D5197D95BD00641204 /* CrmAppTests.m */; };
+		18C748E2197EC7F700F70F84 /* ZDGestureLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */; };
+		18C748E6197EC81A00F70F84 /* ZDFirstLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */; };
+		18C748EF197ECC4E00F70F84 /* ZDLoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */; };
+		18C748F2197ED5C300F70F84 /* ZDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */; };
+		18E4C0F31989954B001487B1 /* ZDQAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F21989954B001487B1 /* ZDQAViewController.m */; };
+		18E4C0F619899944001487B1 /* ZDProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F519899944001487B1 /* ZDProductsListViewController.m */; };
+		18E4C0F91989A139001487B1 /* ZDProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F81989A139001487B1 /* ZDProductDetailViewController.m */; };
+		18E4C10219903A41001487B1 /* ZDMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C10119903A41001487B1 /* ZDMainTabBarController.m */; };
+		18E4C10619903AD4001487B1 /* ZDMainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C10519903AD4001487B1 /* ZDMainStore.m */; };
+		18E4C10919904740001487B1 /* Customer+Save.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C10819904740001487B1 /* Customer+Save.m */; };
+		18E4C10C19904A81001487B1 /* ContactRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C10B19904A81001487B1 /* ContactRecord.m */; };
+		18E4C10F19904A82001487B1 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C10E19904A82001487B1 /* Customer.m */; };
+		18EAFEA11983021B0048B709 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEA01983021B0048B709 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18EAFEA41983045D0048B709 /* ZDCrmWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEA31983045D0048B709 /* ZDCrmWebService.m */; };
+		18EAFEA819830C200048B709 /* ZDSystemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEA719830C200048B709 /* ZDSystemUtil.m */; };
+		18EAFEAC198703D90048B709 /* User+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEAB198703D90048B709 /* User+Create.m */; };
+		FF44738E19835C53001B38DD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44738D19835C53001B38DD /* User.m */; };
+		FF44739B1991D1A2001B38DD /* SSFPasswordGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */; };
+		FF44739C1991D1A2001B38DD /* SSFPasswordGestureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */; };
+		FF44739D1991D1A2001B38DD /* SSFPathLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B976CD197D95BC00641204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B97699197D95BB00641204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B976A0197D95BC00641204;
+			remoteInfo = CrmApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18AE6D721981AFF4004CA597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		18AE6D741981DBAE004CA597 /* ZDAppDelegate+MOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZDAppDelegate+MOC.h"; sourceTree = "<group>"; };
+		18AE6D751981DBAE004CA597 /* ZDAppDelegate+MOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZDAppDelegate+MOC.m"; sourceTree = "<group>"; };
+		18AE6D791981EFDB004CA597 /* ZenDaiCrm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZenDaiCrm.xcdatamodel; sourceTree = "<group>"; };
+		18AE6D7E1981FCFB004CA597 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18AE6D851982D98A004CA597 /* ZDCrmRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCrmRepository.h; sourceTree = "<group>"; };
+		18AE6D861982D98A004CA597 /* ZDCrmRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCrmRepository.m; sourceTree = "<group>"; };
+		18B976A1197D95BC00641204 /* CrmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B976A4197D95BC00641204 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18B976A6197D95BC00641204 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18B976A8197D95BC00641204 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18B976AC197D95BC00641204 /* CrmApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrmApp-Info.plist"; sourceTree = "<group>"; };
+		18B976AE197D95BC00641204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18B976B0197D95BC00641204 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B976B2197D95BC00641204 /* CrmApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrmApp-Prefix.pch"; sourceTree = "<group>"; };
+		18B976B3197D95BC00641204 /* ZDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDAppDelegate.h; sourceTree = "<group>"; };
+		18B976B4197D95BC00641204 /* ZDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDAppDelegate.m; sourceTree = "<group>"; };
+		18B976B7197D95BC00641204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		18B976BC197D95BC00641204 /* ZDPotentialCustomersListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDPotentialCustomersListViewController.h; sourceTree = "<group>"; };
+		18B976BD197D95BC00641204 /* ZDPotentialCustomersListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDPotentialCustomersListViewController.m; sourceTree = "<group>"; };
+		18B976BF197D95BC00641204 /* ZDBusinessesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDBusinessesListViewController.h; sourceTree = "<group>"; };
+		18B976C0197D95BC00641204 /* ZDBusinessesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDBusinessesListViewController.m; sourceTree = "<group>"; };
+		18B976C2197D95BC00641204 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18B976C8197D95BC00641204 /* CrmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B976C9197D95BC00641204 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18B976D1197D95BD00641204 /* CrmAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrmAppTests-Info.plist"; sourceTree = "<group>"; };
+		18B976D3197D95BD00641204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18B976D5197D95BD00641204 /* CrmAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrmAppTests.m; sourceTree = "<group>"; };
+		18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGestureLoginViewController.h; sourceTree = "<group>"; };
+		18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGestureLoginViewController.m; sourceTree = "<group>"; };
+		18C748E4197EC81A00F70F84 /* ZDFirstLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDFirstLoginViewController.h; sourceTree = "<group>"; };
+		18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDFirstLoginViewController.m; sourceTree = "<group>"; };
+		18C748ED197ECC4E00F70F84 /* ZDLoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLoginStore.h; sourceTree = "<group>"; };
+		18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLoginStore.m; sourceTree = "<group>"; };
+		18C748F0197ED5C300F70F84 /* ZDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingViewController.h; sourceTree = "<group>"; };
+		18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingViewController.m; sourceTree = "<group>"; };
+		18E4C0F11989954B001487B1 /* ZDQAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQAViewController.h; sourceTree = "<group>"; };
+		18E4C0F21989954B001487B1 /* ZDQAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQAViewController.m; sourceTree = "<group>"; };
+		18E4C0F419899944001487B1 /* ZDProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDProductsListViewController.h; sourceTree = "<group>"; };
+		18E4C0F519899944001487B1 /* ZDProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDProductsListViewController.m; sourceTree = "<group>"; };
+		18E4C0F71989A139001487B1 /* ZDProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDProductDetailViewController.h; sourceTree = "<group>"; };
+		18E4C0F81989A139001487B1 /* ZDProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDProductDetailViewController.m; sourceTree = "<group>"; };
+		18E4C10019903A41001487B1 /* ZDMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMainTabBarController.h; sourceTree = "<group>"; };
+		18E4C10119903A41001487B1 /* ZDMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMainTabBarController.m; sourceTree = "<group>"; };
+		18E4C10419903AD4001487B1 /* ZDMainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMainStore.h; sourceTree = "<group>"; };
+		18E4C10519903AD4001487B1 /* ZDMainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMainStore.m; sourceTree = "<group>"; };
+		18E4C10719904740001487B1 /* Customer+Save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Customer+Save.h"; sourceTree = "<group>"; };
+		18E4C10819904740001487B1 /* Customer+Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Customer+Save.m"; sourceTree = "<group>"; };
+		18E4C10A19904A81001487B1 /* ContactRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactRecord.h; sourceTree = "<group>"; };
+		18E4C10B19904A81001487B1 /* ContactRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactRecord.m; sourceTree = "<group>"; };
+		18E4C10D19904A82001487B1 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		18E4C10E19904A82001487B1 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		18EAFE9F1983021B0048B709 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		18EAFEA01983021B0048B709 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		18EAFEA21983045D0048B709 /* ZDCrmWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCrmWebService.h; sourceTree = "<group>"; };
+		18EAFEA31983045D0048B709 /* ZDCrmWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCrmWebService.m; sourceTree = "<group>"; };
+		18EAFEA619830C200048B709 /* ZDSystemUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSystemUtil.h; sourceTree = "<group>"; };
+		18EAFEA719830C200048B709 /* ZDSystemUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSystemUtil.m; sourceTree = "<group>"; };
+		18EAFEAA198703D90048B709 /* User+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Create.h"; sourceTree = "<group>"; };
+		18EAFEAB198703D90048B709 /* User+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Create.m"; sourceTree = "<group>"; };
+		FF44738C19835C53001B38DD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FF44738D19835C53001B38DD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FF4473961991D1A2001B38DD /* SSFPasswordGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPasswordGestureView.h; sourceTree = "<group>"; };
+		FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPasswordGestureView.m; sourceTree = "<group>"; };
+		FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFPasswordGestureView.xib; sourceTree = "<group>"; };
+		FF4473991991D1A2001B38DD /* SSFPathLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPathLineLayer.h; sourceTree = "<group>"; };
+		FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPathLineLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B9769E197D95BC00641204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE6D7F1981FCFB004CA597 /* CoreData.framework in Frameworks */,
+				18B976A7197D95BC00641204 /* CoreGraphics.framework in Frameworks */,
+				18B976A9197D95BC00641204 /* UIKit.framework in Frameworks */,
+				18B976A5197D95BC00641204 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B976C5197D95BC00641204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B976CA197D95BC00641204 /* XCTest.framework in Frameworks */,
+				18B976CC197D95BC00641204 /* UIKit.framework in Frameworks */,
+				18B976CB197D95BC00641204 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AE6D701981AFA9004CA597 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D711981AFF4004CA597 /* Main_iPad.storyboard */,
+				18B976B6197D95BC00641204 /* Main_iPhone.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		18AE6D771981EFB8004CA597 /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D781981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld */,
+				18E4C10D19904A82001487B1 /* Customer.h */,
+				18E4C10E19904A82001487B1 /* Customer.m */,
+				18E4C10A19904A81001487B1 /* ContactRecord.h */,
+				18E4C10B19904A81001487B1 /* ContactRecord.m */,
+				FF44738C19835C53001B38DD /* User.h */,
+				FF44738D19835C53001B38DD /* User.m */,
+				18EAFEAA198703D90048B709 /* User+Create.h */,
+				18EAFEAB198703D90048B709 /* User+Create.m */,
+				18E4C10719904740001487B1 /* Customer+Save.h */,
+				18E4C10819904740001487B1 /* Customer+Save.m */,
+			);
+			name = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		18AE6D831982B052004CA597 /* Crm Repository */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D851982D98A004CA597 /* ZDCrmRepository.h */,
+				18AE6D861982D98A004CA597 /* ZDCrmRepository.m */,
+				18EAFEA21983045D0048B709 /* ZDCrmWebService.h */,
+				18EAFEA31983045D0048B709 /* ZDCrmWebService.m */,
+			);
+			name = "Crm Repository";
+			sourceTree = "<group>";
+		};
+		18AE6D841982B4CC004CA597 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D831982B052004CA597 /* Crm Repository */,
+				18AE6D771981EFB8004CA597 /* Core Data Model */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		18B97698197D95BB00641204 = {
+			isa = PBXGroup;
+			children = (
+				18B976AA197D95BC00641204 /* CrmApp */,
+				18B976CF197D95BC00641204 /* CrmAppTests */,
+				18B976A3197D95BC00641204 /* Frameworks */,
+				18B976A2197D95BC00641204 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B976A2197D95BC00641204 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B976A1197D95BC00641204 /* CrmApp.app */,
+				18B976C8197D95BC00641204 /* CrmAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B976A3197D95BC00641204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D7E1981FCFB004CA597 /* CoreData.framework */,
+				18B976A4197D95BC00641204 /* Foundation.framework */,
+				18B976A6197D95BC00641204 /* CoreGraphics.framework */,
+				18B976A8197D95BC00641204 /* UIKit.framework */,
+				18B976C9197D95BC00641204 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18B976AA197D95BC00641204 /* CrmApp */ = {
+			isa = PBXGroup;
+			children = (
+				18EAFEA519830C090048B709 /* Utils */,
+				18AE6D841982B4CC004CA597 /* DataAccess */,
+				18AE6D701981AFA9004CA597 /* Storyboard */,
+				18C748E8197EC8F400F70F84 /* AppDelegate */,
+				18C748E7197EC8DC00F70F84 /* Main */,
+				18C748E3197EC7FD00F70F84 /* Login */,
+				18B976AB197D95BC00641204 /* Supporting Files */,
+			);
+			path = CrmApp;
+			sourceTree = "<group>";
+		};
+		18B976AB197D95BC00641204 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B976C2197D95BC00641204 /* Images.xcassets */,
+				18B976AC197D95BC00641204 /* CrmApp-Info.plist */,
+				18B976AD197D95BC00641204 /* InfoPlist.strings */,
+				18B976B0197D95BC00641204 /* main.m */,
+				18B976B2197D95BC00641204 /* CrmApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B976CF197D95BC00641204 /* CrmAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B976D5197D95BD00641204 /* CrmAppTests.m */,
+				18B976D0197D95BD00641204 /* Supporting Files */,
+			);
+			path = CrmAppTests;
+			sourceTree = "<group>";
+		};
+		18B976D0197D95BD00641204 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B976D1197D95BD00641204 /* CrmAppTests-Info.plist */,
+				18B976D2197D95BD00641204 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C748E3197EC7FD00F70F84 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF447382198353D2001B38DD /* View */,
+				18C748EC197EC94F00F70F84 /* Store */,
+				18C748EB197EC93A00F70F84 /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		18C748E7197EC8DC00F70F84 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18E4C10319903A82001487B1 /* Store */,
+				18E4C0F0198994F5001487B1 /* Product */,
+				18E4C0EF198994EC001487B1 /* Business */,
+				18E4C0EE198994D2001487B1 /* Potential Customer */,
+				18E4C0ED198994BC001487B1 /* Settings */,
+				18E4C10019903A41001487B1 /* ZDMainTabBarController.h */,
+				18E4C10119903A41001487B1 /* ZDMainTabBarController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		18C748E8197EC8F400F70F84 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18AE6D741981DBAE004CA597 /* ZDAppDelegate+MOC.h */,
+				18AE6D751981DBAE004CA597 /* ZDAppDelegate+MOC.m */,
+				18B976B3197D95BC00641204 /* ZDAppDelegate.h */,
+				18B976B4197D95BC00641204 /* ZDAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		18C748EB197EC93A00F70F84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */,
+				18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */,
+				18C748E4197EC81A00F70F84 /* ZDFirstLoginViewController.h */,
+				18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18C748EC197EC94F00F70F84 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				18C748ED197ECC4E00F70F84 /* ZDLoginStore.h */,
+				18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		18E4C0ED198994BC001487B1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				18C748F0197ED5C300F70F84 /* ZDSettingViewController.h */,
+				18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */,
+				18E4C0F11989954B001487B1 /* ZDQAViewController.h */,
+				18E4C0F21989954B001487B1 /* ZDQAViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		18E4C0EE198994D2001487B1 /* Potential Customer */ = {
+			isa = PBXGroup;
+			children = (
+				18B976BC197D95BC00641204 /* ZDPotentialCustomersListViewController.h */,
+				18B976BD197D95BC00641204 /* ZDPotentialCustomersListViewController.m */,
+			);
+			name = "Potential Customer";
+			sourceTree = "<group>";
+		};
+		18E4C0EF198994EC001487B1 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				18B976BF197D95BC00641204 /* ZDBusinessesListViewController.h */,
+				18B976C0197D95BC00641204 /* ZDBusinessesListViewController.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		18E4C0F0198994F5001487B1 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				18E4C0F419899944001487B1 /* ZDProductsListViewController.h */,
+				18E4C0F519899944001487B1 /* ZDProductsListViewController.m */,
+				18E4C0F71989A139001487B1 /* ZDProductDetailViewController.h */,
+				18E4C0F81989A139001487B1 /* ZDProductDetailViewController.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		18E4C10319903A82001487B1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				18E4C10419903AD4001487B1 /* ZDMainStore.h */,
+				18E4C10519903AD4001487B1 /* ZDMainStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		18EAFE9D198302000048B709 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				18EAFE9E1983021B0048B709 /* JSONKit */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		18EAFE9E1983021B0048B709 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				18EAFE9F1983021B0048B709 /* JSONKit.h */,
+				18EAFEA01983021B0048B709 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		18EAFEA519830C090048B709 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18EAFE9D198302000048B709 /* Third Party */,
+				18EAFEA619830C200048B709 /* ZDSystemUtil.h */,
+				18EAFEA719830C200048B709 /* ZDSystemUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FF447382198353D2001B38DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF4473951991D1A2001B38DD /* SSFGesturePassword */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF4473951991D1A2001B38DD /* SSFGesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				FF4473961991D1A2001B38DD /* SSFPasswordGestureView.h */,
+				FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */,
+				FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */,
+				FF4473991991D1A2001B38DD /* SSFPathLineLayer.h */,
+				FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */,
+			);
+			path = SSFGesturePassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B976A0197D95BC00641204 /* CrmApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B976D9197D95BD00641204 /* Build configuration list for PBXNativeTarget "CrmApp" */;
+			buildPhases = (
+				18B9769D197D95BC00641204 /* Sources */,
+				18B9769E197D95BC00641204 /* Frameworks */,
+				18B9769F197D95BC00641204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrmApp;
+			productName = CrmApp;
+			productReference = 18B976A1197D95BC00641204 /* CrmApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B976C7197D95BC00641204 /* CrmAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B976DC197D95BD00641204 /* Build configuration list for PBXNativeTarget "CrmAppTests" */;
+			buildPhases = (
+				18B976C4197D95BC00641204 /* Sources */,
+				18B976C5197D95BC00641204 /* Frameworks */,
+				18B976C6197D95BC00641204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B976CE197D95BC00641204 /* PBXTargetDependency */,
+			);
+			name = CrmAppTests;
+			productName = CrmAppTests;
+			productReference = 18B976C8197D95BC00641204 /* CrmAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B97699197D95BB00641204 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.zendai;
+				TargetAttributes = {
+					18B976A0197D95BC00641204 = {
+						DevelopmentTeam = S87R43P796;
+					};
+					18B976C7197D95BC00641204 = {
+						TestTargetID = 18B976A0197D95BC00641204;
+					};
+				};
+			};
+			buildConfigurationList = 18B9769C197D95BB00641204 /* Build configuration list for PBXProject "CrmApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B97698197D95BB00641204;
+			productRefGroup = 18B976A2197D95BC00641204 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B976A0197D95BC00641204 /* CrmApp */,
+				18B976C7197D95BC00641204 /* CrmAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B9769F197D95BC00641204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B976C3197D95BC00641204 /* Images.xcassets in Resources */,
+				18AE6D731981AFF4004CA597 /* Main_iPad.storyboard in Resources */,
+				FF44739C1991D1A2001B38DD /* SSFPasswordGestureView.xib in Resources */,
+				18B976B8197D95BC00641204 /* Main_iPhone.storyboard in Resources */,
+				18B976AF197D95BC00641204 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B976C6197D95BC00641204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B976D4197D95BD00641204 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B9769D197D95BC00641204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EAFEAC198703D90048B709 /* User+Create.m in Sources */,
+				18AE6D761981DBAE004CA597 /* ZDAppDelegate+MOC.m in Sources */,
+				18E4C10619903AD4001487B1 /* ZDMainStore.m in Sources */,
+				FF44739B1991D1A2001B38DD /* SSFPasswordGestureView.m in Sources */,
+				18C748EF197ECC4E00F70F84 /* ZDLoginStore.m in Sources */,
+				FF44739D1991D1A2001B38DD /* SSFPathLineLayer.m in Sources */,
+				18B976C1197D95BC00641204 /* ZDBusinessesListViewController.m in Sources */,
+				18B976BE197D95BC00641204 /* ZDPotentialCustomersListViewController.m in Sources */,
+				18E4C10C19904A81001487B1 /* ContactRecord.m in Sources */,
+				FF44738E19835C53001B38DD /* User.m in Sources */,
+				18AE6D871982D98A004CA597 /* ZDCrmRepository.m in Sources */,
+				18E4C0F31989954B001487B1 /* ZDQAViewController.m in Sources */,
+				18E4C0F91989A139001487B1 /* ZDProductDetailViewController.m in Sources */,
+				18B976B5197D95BC00641204 /* ZDAppDelegate.m in Sources */,
+				18EAFEA11983021B0048B709 /* JSONKit.m in Sources */,
+				18C748E6197EC81A00F70F84 /* ZDFirstLoginViewController.m in Sources */,
+				18EAFEA41983045D0048B709 /* ZDCrmWebService.m in Sources */,
+				18B976B1197D95BC00641204 /* main.m in Sources */,
+				18AE6D7A1981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld in Sources */,
+				18E4C10919904740001487B1 /* Customer+Save.m in Sources */,
+				18EAFEA819830C200048B709 /* ZDSystemUtil.m in Sources */,
+				18C748E2197EC7F700F70F84 /* ZDGestureLoginViewController.m in Sources */,
+				18E4C0F619899944001487B1 /* ZDProductsListViewController.m in Sources */,
+				18E4C10F19904A82001487B1 /* Customer.m in Sources */,
+				18E4C10219903A41001487B1 /* ZDMainTabBarController.m in Sources */,
+				18C748F2197ED5C300F70F84 /* ZDSettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B976C4197D95BC00641204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B976D6197D95BD00641204 /* CrmAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B976CE197D95BC00641204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B976A0197D95BC00641204 /* CrmApp */;
+			targetProxy = 18B976CD197D95BC00641204 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18AE6D711981AFF4004CA597 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AE6D721981AFF4004CA597 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		18B976AD197D95BC00641204 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B976AE197D95BC00641204 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18B976B6197D95BC00641204 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B976B7197D95BC00641204 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		18B976D2197D95BD00641204 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B976D3197D95BD00641204 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B976D7197D95BD00641204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B976D8197D95BD00641204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B976DA197D95BD00641204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HAIHUI TAN (Y6S4RS5F3H)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrmApp/CrmApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/lib",
+				);
+				INFOPLIST_FILE = "CrmApp/CrmApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "345E9698-B911-4F28-9CA0-7B1646B2A4B5";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18B976DB197D95BD00641204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HAIHUI TAN (Y6S4RS5F3H)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrmApp/CrmApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/lib",
+				);
+				INFOPLIST_FILE = "CrmApp/CrmApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "345E9698-B911-4F28-9CA0-7B1646B2A4B5";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18B976DD197D95BD00641204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrmApp.app/CrmApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrmApp/CrmApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CrmAppTests/CrmAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18B976DE197D95BD00641204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrmApp.app/CrmApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrmApp/CrmApp-Prefix.pch";
+				INFOPLIST_FILE = "CrmAppTests/CrmAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B9769C197D95BB00641204 /* Build configuration list for PBXProject "CrmApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B976D7197D95BD00641204 /* Debug */,
+				18B976D8197D95BD00641204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B976D9197D95BD00641204 /* Build configuration list for PBXNativeTarget "CrmApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B976DA197D95BD00641204 /* Debug */,
+				18B976DB197D95BD00641204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B976DC197D95BD00641204 /* Build configuration list for PBXNativeTarget "CrmAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B976DD197D95BD00641204 /* Debug */,
+				18B976DE197D95BD00641204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18AE6D781981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18AE6D791981EFDB004CA597 /* ZenDaiCrm.xcdatamodel */,
+			);
+			currentVersion = 18AE6D791981EFDB004CA597 /* ZenDaiCrm.xcdatamodel */;
+			path = ZenDaiCrm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B97699197D95BB00641204 /* Project object */;
+}
