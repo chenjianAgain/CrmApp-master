@@ -17,7 +17,7 @@
     
     const char * cStr = [value UTF8String];
     unsigned char result[16];
-    CC_MD5(cStr, strlen(cStr), result);
+    CC_MD5(cStr, strlen(cStr), result); 
     
     int j = 16;
     unsigned char str[48];
