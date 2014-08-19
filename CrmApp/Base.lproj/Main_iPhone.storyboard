@@ -565,7 +565,7 @@
         <scene sceneID="9bX-88-1MG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GPu-yJ-lcZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="设置" image="u15_normal" id="sRT-EP-DvZ"/>
+                    <tabBarItem key="tabBarItem" title="设置" image="main_ico_footer_setting" id="sRT-EP-DvZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WNO-IM-A6I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -730,7 +730,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpm-Wq-DhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="2778"/>
+            <point key="canvasLocation" x="1196" y="2010"/>
         </scene>
         <!--View Controller - 常见问题-->
         <scene sceneID="BB4-G7-oQJ">
@@ -768,7 +768,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0LN-58-uHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="2810"/>
+            <point key="canvasLocation" x="1697" y="2781"/>
         </scene>
         <!--View Controller - 意见反馈-->
         <scene sceneID="8Nh-ET-YHc">
@@ -801,7 +801,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qp4-8Z-6bT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="2010"/>
+            <point key="canvasLocation" x="1697" y="2010"/>
         </scene>
         <!--First Login View Controller-->
         <scene sceneID="S3n-48-4Ad">
@@ -937,7 +937,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
         <scene sceneID="QvN-Xl-ij4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LGu-Aw-qiw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="机会" image="u7_normal" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="机会" image="main_ico_footer_chance" id="u1e-5L-l1D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpG-ey-WJs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -956,7 +956,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
         <scene sceneID="BaL-vg-q8o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JOi-c0-tnU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="产品" image="u5_normal" id="AYG-Qr-cIY"/>
+                    <tabBarItem key="tabBarItem" title="产品" image="main_ico_footer_product" id="AYG-Qr-cIY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FeT-YC-P9H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -975,7 +975,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
         <scene sceneID="sQ4-wq-6Wg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="07l-6e-Lu1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="客户" image="u9_normal" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="客户" image="main_ico_footer_client" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sPg-Ns-E18">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1376,12 +1376,12 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
         </scene>
     </scenes>
     <resources>
-        <image name="u15_normal" width="25" height="25"/>
+        <image name="main_ico_footer_chance" width="25" height="25"/>
+        <image name="main_ico_footer_client" width="25" height="25"/>
+        <image name="main_ico_footer_product" width="25" height="25"/>
+        <image name="main_ico_footer_setting" width="25" height="25"/>
         <image name="u17_normal" width="50" height="50"/>
         <image name="u56_normal" width="22" height="22"/>
-        <image name="u5_normal" width="25" height="25"/>
-        <image name="u7_normal" width="25" height="25"/>
-        <image name="u9_normal" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
