@@ -534,7 +534,7 @@
 				ORGANIZATIONNAME = com.zendai;
 				TargetAttributes = {
 					18B976A0197D95BC00641204 = {
-						DevelopmentTeam = K25N4TR8P7;
+						DevelopmentTeam = 4YB2GQAF4F;
 					};
 					18B976C7197D95BC00641204 = {
 						TestTargetID = 18B976A0197D95BC00641204;
