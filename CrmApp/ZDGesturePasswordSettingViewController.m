@@ -45,12 +45,8 @@
 
 - (void)passwordGestureViewFinishSecondTimePassword:(SSFPasswordGestureView *)passwordView andPassword:(NSString *)password
 {
-
-    //保存到NSUserDefaults
-    [[NSUserDefaults standardUserDefaults] setObject:password forKey:USER_GESTURE];
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:nil message:@"手势密码修改成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:nil message:@"手势密码设置成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
     [alertView show];
-
 }
 
 - (void)passwordGestureViewFinishWrongPassword:(SSFPasswordGestureView *)passwordView
@@ -64,7 +60,14 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == alertView.cancelButtonIndex) {
-        [self.navigationController popViewControllerAnimated:YES];
+        if (self.navigationController) {
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            // 说明是登录时使用本VC
+            if (self.delegate) {
+                [self.delegate gesturePasswordSettingViewControllerDidFinishSettingGesture:self];
+            }
+        }
     }
 }
 

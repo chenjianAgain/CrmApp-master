@@ -9,52 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CrmApp/ZDFirstLoginViewController.m"
-            timestampString = "430163824.572256"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-loginButtonPressed:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZDFirstLoginViewController loginButtonPressed:]"
-                  moduleName = "CrmApp"
-                  urlString = "file:///Users/apple/Desktop/CrmApp-master/CrmApp/ZDFirstLoginViewController.m"
-                  timestampString = "430163824.577999"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "66">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__49-[ZDFirstLoginViewController loginButtonPressed:]_block_invoke"
-                  moduleName = "CrmApp"
-                  urlString = "file:///Users/apple/Desktop/CrmApp-master/CrmApp/ZDFirstLoginViewController.m"
-                  timestampString = "430163824.578197"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "74">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "CrmApp/ZDMainStore.m"
             timestampString = "428959368.721981"
             startingColumnNumber = "9223372036854775807"
@@ -88,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CrmApp/ZDGestureLoginViewController.m"
-            timestampString = "430163824.572256"
+            timestampString = "430170023.273724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "-passwordGestureViewFinishCheckPassword:"
             landmarkType = "5">
          </BreakpointContent>
@@ -104,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CrmApp/ZDGestureLoginViewController.m"
-            timestampString = "430163824.572256"
+            timestampString = "430170023.273724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-passwordGestureViewCheckPasswordWrong:"
             landmarkType = "5">
          </BreakpointContent>
@@ -119,13 +73,93 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CrmApp/ZDGestureLoginViewController.m"
-            timestampString = "430162814.823624"
+            filePath = "CrmApp/ZDLoginViewController.m"
+            timestampString = "430166962.080155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-swipeRight:"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-viewControllerToPresent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrmApp/ZDGesturePasswordSettingViewController.m"
+            timestampString = "430170651.074471"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-alertView:clickedButtonAtIndex:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrmApp/ZDGesturePasswordSettingViewController.m"
+            timestampString = "430166137.160434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-passwordGestureViewFinishFirstTimePassword:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrmApp/ZDGesturePasswordSettingViewController.m"
+            timestampString = "430170651.074471"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-passwordGestureViewFinishWrongPassword:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrmApp/ZDLoginViewController.m"
+            timestampString = "430166962.080155"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-gesturePasswordSettingViewControllerDidFinishSettingGesture:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrmApp/ZDLoginStore.m"
+            timestampString = "430166491.15687"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-rootMainViewController"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

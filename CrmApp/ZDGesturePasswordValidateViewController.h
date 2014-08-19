@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SSFPasswordGestureView.h"
 
-@interface ZDGestureLoginViewController : UIViewController
+@interface ZDGesturePasswordValidateViewController : UIViewController
 
 @property (nonatomic) SSFPasswordGestureViewState gestureViewState;
 

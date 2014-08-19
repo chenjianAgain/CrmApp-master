@@ -9,6 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "ZDSettingViewController.h"
 
+@protocol ZDGesturePasswordSettingViewControllerDelegate;
+
 @interface ZDGesturePasswordSettingViewController : UIViewController<UIAlertViewDelegate>
+
+@property (weak, nonatomic) id<ZDGesturePasswordSettingViewControllerDelegate> delegate;
+
+@end
+
+@protocol ZDGesturePasswordSettingViewControllerDelegate <NSObject>
+
+@optional
+
+- (void)gesturePasswordSettingViewControllerDidFinishSettingGesture:(ZDGesturePasswordSettingViewController *)controller;
 
 @end

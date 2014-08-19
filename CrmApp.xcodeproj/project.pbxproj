@@ -26,8 +26,8 @@
 		18B976CC197D95BC00641204 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B976A8197D95BC00641204 /* UIKit.framework */; };
 		18B976D4197D95BD00641204 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B976D2197D95BD00641204 /* InfoPlist.strings */; };
 		18B976D6197D95BD00641204 /* CrmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B976D5197D95BD00641204 /* CrmAppTests.m */; };
-		18C748E2197EC7F700F70F84 /* ZDGestureLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */; };
-		18C748E6197EC81A00F70F84 /* ZDFirstLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */; };
+		18C748E2197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E1197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.m */; };
+		18C748E6197EC81A00F70F84 /* ZDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748E5197EC81A00F70F84 /* ZDLoginViewController.m */; };
 		18C748EF197ECC4E00F70F84 /* ZDLoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */; };
 		18C748F2197ED5C300F70F84 /* ZDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */; };
 		18D3F9F019A3A4D4007EF441 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D3F9EF19A3A4D4007EF441 /* Images.xcassets */; };
@@ -91,10 +91,10 @@
 		18B976D1197D95BD00641204 /* CrmAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrmAppTests-Info.plist"; sourceTree = "<group>"; };
 		18B976D3197D95BD00641204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18B976D5197D95BD00641204 /* CrmAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrmAppTests.m; sourceTree = "<group>"; };
-		18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGestureLoginViewController.h; sourceTree = "<group>"; };
-		18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGestureLoginViewController.m; sourceTree = "<group>"; };
-		18C748E4197EC81A00F70F84 /* ZDFirstLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDFirstLoginViewController.h; sourceTree = "<group>"; };
-		18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDFirstLoginViewController.m; sourceTree = "<group>"; };
+		18C748E0197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGesturePasswordValidateViewController.h; sourceTree = "<group>"; };
+		18C748E1197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGesturePasswordValidateViewController.m; sourceTree = "<group>"; };
+		18C748E4197EC81A00F70F84 /* ZDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLoginViewController.h; sourceTree = "<group>"; };
+		18C748E5197EC81A00F70F84 /* ZDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLoginViewController.m; sourceTree = "<group>"; };
 		18C748ED197ECC4E00F70F84 /* ZDLoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLoginStore.h; sourceTree = "<group>"; };
 		18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLoginStore.m; sourceTree = "<group>"; };
 		18C748F0197ED5C300F70F84 /* ZDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingViewController.h; sourceTree = "<group>"; };
@@ -246,13 +246,13 @@
 		18B976AA197D95BC00641204 /* CrmApp */ = {
 			isa = PBXGroup;
 			children = (
-				18D3FA0819A3C903007EF441 /* GesturePassword */,
 				18EAFEA519830C090048B709 /* Utils */,
 				18AE6D841982B4CC004CA597 /* DataAccess */,
 				18AE6D701981AFA9004CA597 /* Storyboard */,
 				18C748E8197EC8F400F70F84 /* AppDelegate */,
 				18C748E7197EC8DC00F70F84 /* Main */,
 				18C748E3197EC7FD00F70F84 /* Login */,
+				18D3FA0819A3C903007EF441 /* GesturePassword */,
 				18B976AB197D95BC00641204 /* Supporting Files */,
 			);
 			path = CrmApp;
@@ -291,9 +291,8 @@
 		18C748E3197EC7FD00F70F84 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FF447382198353D2001B38DD /* View */,
 				18C748EC197EC94F00F70F84 /* Store */,
-				18C748EB197EC93A00F70F84 /* Controller */,
+				18C748EB197EC93A00F70F84 /* ViewController */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -301,13 +300,13 @@
 		18C748E7197EC8DC00F70F84 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				18D3FA0A19A3E618007EF441 /* View */,
+				18D3FA0919A3E609007EF441 /* ViewController */,
 				18E4C10319903A82001487B1 /* Store */,
 				18E4C0F0198994F5001487B1 /* Product */,
 				18E4C0EF198994EC001487B1 /* Business */,
 				18E4C0EE198994D2001487B1 /* Potential Customer */,
 				18E4C0ED198994BC001487B1 /* Settings */,
-				18E4C10019903A41001487B1 /* ZDMainTabBarController.h */,
-				18E4C10119903A41001487B1 /* ZDMainTabBarController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -323,13 +322,13 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		18C748EB197EC93A00F70F84 /* Controller */ = {
+		18C748EB197EC93A00F70F84 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18C748E4197EC81A00F70F84 /* ZDFirstLoginViewController.h */,
-				18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */,
+				18C748E4197EC81A00F70F84 /* ZDLoginViewController.h */,
+				18C748E5197EC81A00F70F84 /* ZDLoginViewController.m */,
 			);
-			name = Controller;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		18C748EC197EC94F00F70F84 /* Store */ = {
@@ -366,12 +365,46 @@
 		18D3FA0819A3C903007EF441 /* GesturePassword */ = {
 			isa = PBXGroup;
 			children = (
-				18D3F9FD19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.h */,
-				18D3F9FE19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m */,
-				18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */,
-				18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */,
+				18D3FA0C19A3E666007EF441 /* ViewController */,
+				18D3FA0B19A3E660007EF441 /* View */,
 			);
 			name = GesturePassword;
+			sourceTree = "<group>";
+		};
+		18D3FA0919A3E609007EF441 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E4C10019903A41001487B1 /* ZDMainTabBarController.h */,
+				18E4C10119903A41001487B1 /* ZDMainTabBarController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		18D3FA0A19A3E618007EF441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18D3FA0119A3C168007EF441 /* SSFLeftRightSwipeCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18D3FA0B19A3E660007EF441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18D3F9F419A3BB02007EF441 /* SSFGesturePassword */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18D3FA0C19A3E666007EF441 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18D3F9FD19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.h */,
+				18D3F9FE19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m */,
+				18C748E0197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.h */,
+				18C748E1197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		18E4C0ED198994BC001487B1 /* Settings */ = {
@@ -450,15 +483,6 @@
 				18EAFEA719830C200048B709 /* ZDSystemUtil.m */,
 			);
 			name = Utils;
-			sourceTree = "<group>";
-		};
-		FF447382198353D2001B38DD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				18D3FA0119A3C168007EF441 /* SSFLeftRightSwipeCell */,
-				18D3F9F419A3BB02007EF441 /* SSFGesturePassword */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,13 +605,13 @@
 				18B976B5197D95BC00641204 /* ZDAppDelegate.m in Sources */,
 				18EAFEA11983021B0048B709 /* JSONKit.m in Sources */,
 				18D3F9FC19A3BB02007EF441 /* SSFPathLineLayer.m in Sources */,
-				18C748E6197EC81A00F70F84 /* ZDFirstLoginViewController.m in Sources */,
+				18C748E6197EC81A00F70F84 /* ZDLoginViewController.m in Sources */,
 				18EAFEA41983045D0048B709 /* ZDCrmWebService.m in Sources */,
 				18B976B1197D95BC00641204 /* main.m in Sources */,
 				18AE6D7A1981EFDB004CA597 /* ZenDaiCrm.xcdatamodeld in Sources */,
 				18E4C10919904740001487B1 /* Customer+Save.m in Sources */,
 				18EAFEA819830C200048B709 /* ZDSystemUtil.m in Sources */,
-				18C748E2197EC7F700F70F84 /* ZDGestureLoginViewController.m in Sources */,
+				18C748E2197EC7F700F70F84 /* ZDGesturePasswordValidateViewController.m in Sources */,
 				18E4C0F619899944001487B1 /* ZDProductsListViewController.m in Sources */,
 				18E4C10F19904A82001487B1 /* Customer.m in Sources */,
 				18D3F9FA19A3BB02007EF441 /* SSFPasswordGestureView.m in Sources */,

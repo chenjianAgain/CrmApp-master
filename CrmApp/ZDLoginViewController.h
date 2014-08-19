@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZDFirstLoginViewController : UIViewController
+@interface ZDLoginViewController : UIViewController
 
 @property (nonatomic, strong) NSManagedObjectContext *crmDatabaseContext;
 

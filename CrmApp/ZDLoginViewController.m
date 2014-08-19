@@ -6,20 +6,28 @@
 //  Copyright (c) 2014年 com.zendai. All rights reserved.
 //
 
-#import "ZDFirstLoginViewController.h"
+#import "ZDLoginViewController.h"
 #import "ZDLoginStore.h"
-#import "ZDGestureLoginViewController.h"
+#import "ZDGesturePasswordValidateViewController.h"
+#import "ZDGesturePasswordSettingViewController.h"
 
-@interface ZDFirstLoginViewController ()
+@interface ZDLoginViewController () <ZDGesturePasswordSettingViewControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField* usernameLabel;
 @property (nonatomic, weak) IBOutlet UITextField* passwordLabel;
+
 
 - (IBAction)loginButtonPressed:(id)sender;
 
 @end
 
-@implementation ZDFirstLoginViewController
+@implementation ZDLoginViewController
+
+- (void)gesturePasswordSettingViewControllerDidFinishSettingGesture:(ZDGesturePasswordSettingViewController *)controller
+{
+    [self.presentedViewController dismissViewControllerAnimated:NO completion:nil];
+    self.view.window.rootViewController = [ZDLoginStore sharedStore].rootMainViewController;
+}
 
 - (void)viewDidLoad
 {
@@ -35,11 +43,11 @@
     if (!hasBeenLogged) {
         [[ZDLoginStore sharedStore] userWithId:result];
         
-        ZDGestureLoginViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"GestureLoginViewController"];
-        gestureViewController.gestureViewState = SSFPasswordGestureViewStateWillFirstDraw;
+        ZDGesturePasswordSettingViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"ZDGesturePasswordSettingViewController"];
+        gestureViewController.delegate = self;
         toPresent = gestureViewController;
     } else {
-        ZDGestureLoginViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"GestureLoginViewController"];
+        ZDGesturePasswordValidateViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"ZDGesturePasswordValidateViewController"];
         gestureViewController.gestureViewState = SSFPasswordGestureViewStateCheck;
         toPresent = gestureViewController;
     }
@@ -58,11 +66,5 @@
         }
     }];
 }
-// chenjian's test
-// chenjian's test3
-// chenjian's test4
-
-// forXiaoFengfeng test1
-
 
 @end

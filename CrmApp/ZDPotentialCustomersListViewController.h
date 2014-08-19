@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZDPotentialCustomersListViewController : UIViewController
+@interface ZDPotentialCustomersListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate,UISearchDisplayDelegate>
 
 @end

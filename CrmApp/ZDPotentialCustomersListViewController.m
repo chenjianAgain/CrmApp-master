@@ -7,15 +7,25 @@
 //
 
 #import "ZDPotentialCustomersListViewController.h"
+#import "SSFLeftRightSwipeCell/SSFLeftRightSwipeTableViewCell.h"
 
-@interface ZDPotentialCustomersListViewController () <UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate>
+@interface ZDPotentialCustomersListViewController () <SSFLeftRightSwipeTableViewCellDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView* tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar * searchBar;
+
 
 @end
 
 @implementation ZDPotentialCustomersListViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"SSFLeftRightSwipeTableViewCell" bundle:nil] forCellReuseIdentifier:@"SSFLeftRightSwipeTableViewCell"];
+    [self.searchDisplayController.searchResultsTableView registerNib:[UINib nibWithNibName:@"SSFLeftRightSwipeTableViewCell" bundle:nil] forCellReuseIdentifier:@"SSFLeftRightSwipeTableViewCell"];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -24,21 +34,31 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"PotentialCustomerCell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"PotentialCustomerCell"];
-    }
-    
-    cell.textLabel.text = @"许女士";
-    cell.detailTextLabel.text = @"一般";
+    SSFLeftRightSwipeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SSFLeftRightSwipeTableViewCell" forIndexPath:indexPath];
+    cell.delegate = self;
     
     return cell;
 }
 
-#pragma mark - UISearchDisplayControllerDelegate
+#pragma mark - search display controller delegate
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
+//    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"customerName contains[cd] %@",searchString];
+//    self.filteredChanceCustomers = [self.allChanceCustomers filteredArrayUsingPredicate:predicate];
     return YES;
 }
+
+#pragma mark - SSFLeftRightSwipeTableViewCellDelegate
+
+- (void)leftRightSwipeTableViewCellDeleteButtonPressed:(SSFLeftRightSwipeTableViewCell *)cell
+{
+    
+}
+
+- (void)leftRightSwipeTableViewCellEditeButtonPressed:(SSFLeftRightSwipeTableViewCell *)cell
+{
+    
+}
+
 @end

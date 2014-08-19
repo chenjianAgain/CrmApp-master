@@ -13,7 +13,7 @@
 #import <CoreData/CoreData.h>
 #import "ZDSystemUtil.h"
 #import "User+Create.h"
-#import "ZDGestureLoginViewController.h"
+#import "ZDGesturePasswordValidateViewController.h"
 
 @interface ZDLoginStore ()
 
@@ -95,8 +95,8 @@
     
     UIViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:viewControllerName];
     
-    if ([vc isKindOfClass:[ZDGestureLoginViewController class]]) {
-        ZDGestureLoginViewController* gestureViewController = (ZDGestureLoginViewController *)vc;
+    if ([vc isKindOfClass:[ZDGesturePasswordValidateViewController class]]) {
+        ZDGesturePasswordValidateViewController* gestureViewController = (ZDGesturePasswordValidateViewController *)vc;
         gestureViewController.gestureViewState = SSFPasswordGestureViewStateCheck;
         vc = gestureViewController;
     }

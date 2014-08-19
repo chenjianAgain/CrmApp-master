@@ -6,20 +6,18 @@
 //  Copyright (c) 2014年 com.zendai. All rights reserved.
 //
 
-#import "ZDGestureLoginViewController.h"
+#import "ZDGesturePasswordValidateViewController.h"
 #import "ZDLoginStore.h"
 #import "SSFPasswordGestureView.h"
 #import "ZDAppDelegate.h"
 #import "User.h"
-#import "ZDFirstLoginViewController.h"
+#import "ZDLoginViewController.h"
 
-@interface ZDGestureLoginViewController () <SSFPasswordGestureViewDelegate>
-
-- (IBAction)swipeRight:(id)sender;
+@interface ZDGesturePasswordValidateViewController () <SSFPasswordGestureViewDelegate>
 
 @end
 
-@implementation ZDGestureLoginViewController
+@implementation ZDGesturePasswordValidateViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -31,14 +29,6 @@
     gestureView.center = self.view.center;
     gestureView.gesturePassword = [[NSUserDefaults standardUserDefaults] objectForKey:SSFSecondUserGesturePasswordKey];
     [self.view addSubview:gestureView];
-}
-
-
-- (IBAction)swipeRight:(id)sender {
-
-    if ([[ZDLoginStore sharedStore] validateGestureLogin:@""]) {
-        
-    }
 }
 
 #pragma mark - SSFPasswordGestureViewDelegate

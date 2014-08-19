@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--First Login View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="L8d-d1-SsL">
             <objects>
-                <viewController storyboardIdentifier="FirstLoginViewController" id="Pog-rc-M9X" customClass="ZDFirstLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstLoginViewController" id="Pog-rc-M9X" customClass="ZDLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bYK-T7-8ao"/>
                         <viewControllerLayoutGuide type="bottom" id="Pfe-cU-e9Z"/>
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYJ-CH-JPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2462" y="2626"/>
+            <point key="canvasLocation" x="-2986" y="244"/>
         </scene>
         <!--Potential Customers List View Controller - First-->
         <scene sceneID="lEa-eZ-l4W">
@@ -682,6 +682,24 @@
             </objects>
             <point key="canvasLocation" x="916" y="-98"/>
         </scene>
+        <!--Gesture Password Validate View Controller-->
+        <scene sceneID="sWo-GS-bP7">
+            <objects>
+                <viewController id="fsU-uw-8qo" customClass="ZDGesturePasswordValidateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pNe-zM-qA4"/>
+                        <viewControllerLayoutGuide type="bottom" id="wI1-7s-JZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qi1-kt-LhO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSz-fH-dgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2127" y="244"/>
+        </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="1o6-36-cpX">
             <objects>
@@ -946,10 +964,10 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
             </objects>
             <point key="canvasLocation" x="1839" y="2626"/>
         </scene>
-        <!--Gesture Login View Controller-->
+        <!--Gesture Password Setting View Controller-->
         <scene sceneID="WgN-J5-8R4">
             <objects>
-                <viewController storyboardIdentifier="GestureLoginViewController" hidesBottomBarWhenPushed="YES" id="uNO-Kj-Tyr" customClass="ZDGestureLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZDGesturePasswordSettingViewController" hidesBottomBarWhenPushed="YES" id="uNO-Kj-Tyr" customClass="ZDGesturePasswordSettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BE7-ZB-kkz"/>
                         <viewControllerLayoutGuide type="bottom" id="KR1-Ni-bRH"/>
@@ -957,15 +975,6 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
                     <view key="view" contentMode="scaleToFill" id="ctA-QW-lMu">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请右划模拟手势密码登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMm-QC-xX8">
-                                <rect key="frame" x="291" y="501" width="187" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -981,7 +990,7 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1270" y="2626"/>
+            <point key="canvasLocation" x="898" y="3894"/>
         </scene>
         <!--Navigation Controller - 机会-->
         <scene sceneID="67Y-am-Guj">

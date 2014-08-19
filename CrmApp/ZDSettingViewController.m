@@ -8,7 +8,7 @@
 
 #import "ZDSettingViewController.h"
 #import "ZDLoginStore.h"
-#import "ZDGestureLoginViewController.h"
+#import "ZDGesturePasswordValidateViewController.h"
 
 @interface ZDSettingViewController () <UIAlertViewDelegate>
 
@@ -34,15 +34,15 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.section == 3 && indexPath.row == 0) {
-        ZDGestureLoginViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"GestureLoginViewController"];
-        gestureViewController.gestureViewState = SSFPasswordGestureViewStateWillFirstDraw;
-        [self presentViewController:gestureViewController animated:YES completion:^{
-            
-        }];
-    }
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (indexPath.section == 3 && indexPath.row == 0) {
+//        ZDGesturePasswordValidateViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"GestureLoginViewController"];
+//        gestureViewController.gestureViewState = SSFPasswordGestureViewStateWillFirstDraw;
+//        [self presentViewController:gestureViewController animated:YES completion:^{
+//            
+//        }];
+//    }
+//}
 
 @end
