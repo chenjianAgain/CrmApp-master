@@ -43,38 +43,6 @@
 
 #pragma mark - SSFPasswordGestureViewDelegate
 
-- (void)passwordGestureViewFinishFirstTimePassword:(SSFPasswordGestureView *)passwordView
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"请再次输入手势密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alert show];
-}
-
-- (void)passwordGestureViewFinishSecondTimePassword:(SSFPasswordGestureView *)passwordView
-{
-    if (![self.presentingViewController isKindOfClass:[ZDFirstLoginViewController class]]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
-    } else {
-        UIViewController *mainTabViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabViewController"];
-        [self presentViewController:mainTabViewController animated:YES completion:^{
-            
-            ZDAppDelegate *appDelegagte = [UIApplication sharedApplication].delegate;
-            NSManagedObjectContext* moc = appDelegagte.crmDatabaseContext;
-            
-            User* user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:moc];
-            user.gesturePassword = passwordView.gesturePassword;
-            
-            [moc save:nil];
-            
-        }];
-    }
-}
-
-- (void)passwordGestureViewFinishWrongPassword:(SSFPasswordGestureView *)passwordView
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"两次手势密码不一致，请重新输入第二次手势密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alert show];
-}
-
 - (void)passwordGestureViewFinishCheckPassword:(SSFPasswordGestureView *)passwordView
 {
     UIViewController *mainTabViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabViewController"];

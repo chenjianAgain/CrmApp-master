@@ -39,7 +39,6 @@
         gestureViewController.gestureViewState = SSFPasswordGestureViewStateWillFirstDraw;
         toPresent = gestureViewController;
     } else {
-//        toPresent = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabViewController"];
         ZDGestureLoginViewController *gestureViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"GestureLoginViewController"];
         gestureViewController.gestureViewState = SSFPasswordGestureViewStateCheck;
         toPresent = gestureViewController;

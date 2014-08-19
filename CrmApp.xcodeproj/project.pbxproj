@@ -31,6 +31,13 @@
 		18C748EF197ECC4E00F70F84 /* ZDLoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748EE197ECC4E00F70F84 /* ZDLoginStore.m */; };
 		18C748F2197ED5C300F70F84 /* ZDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */; };
 		18D3F9F019A3A4D4007EF441 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D3F9EF19A3A4D4007EF441 /* Images.xcassets */; };
+		18D3F9F319A3B4B7007EF441 /* ZDSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F9F219A3B4B7007EF441 /* ZDSuggestionViewController.m */; };
+		18D3F9FA19A3BB02007EF441 /* SSFPasswordGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F9F619A3BB02007EF441 /* SSFPasswordGestureView.m */; };
+		18D3F9FB19A3BB02007EF441 /* SSFPasswordGestureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D3F9F719A3BB02007EF441 /* SSFPasswordGestureView.xib */; };
+		18D3F9FC19A3BB02007EF441 /* SSFPathLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F9F919A3BB02007EF441 /* SSFPathLineLayer.m */; };
+		18D3F9FF19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F9FE19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m */; };
+		18D3FA0519A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3FA0319A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.m */; };
+		18D3FA0619A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D3FA0419A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.xib */; };
 		18E4C0F31989954B001487B1 /* ZDQAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F21989954B001487B1 /* ZDQAViewController.m */; };
 		18E4C0F619899944001487B1 /* ZDProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F519899944001487B1 /* ZDProductsListViewController.m */; };
 		18E4C0F91989A139001487B1 /* ZDProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4C0F81989A139001487B1 /* ZDProductDetailViewController.m */; };
@@ -44,9 +51,6 @@
 		18EAFEA819830C200048B709 /* ZDSystemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEA719830C200048B709 /* ZDSystemUtil.m */; };
 		18EAFEAC198703D90048B709 /* User+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFEAB198703D90048B709 /* User+Create.m */; };
 		FF44738E19835C53001B38DD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44738D19835C53001B38DD /* User.m */; };
-		FF44739B1991D1A2001B38DD /* SSFPasswordGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */; };
-		FF44739C1991D1A2001B38DD /* SSFPasswordGestureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */; };
-		FF44739D1991D1A2001B38DD /* SSFPathLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,18 @@
 		18C748F0197ED5C300F70F84 /* ZDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingViewController.h; sourceTree = "<group>"; };
 		18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingViewController.m; sourceTree = "<group>"; };
 		18D3F9EF19A3A4D4007EF441 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18D3F9F119A3B4B7007EF441 /* ZDSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSuggestionViewController.h; sourceTree = "<group>"; };
+		18D3F9F219A3B4B7007EF441 /* ZDSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSuggestionViewController.m; sourceTree = "<group>"; };
+		18D3F9F519A3BB02007EF441 /* SSFPasswordGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPasswordGestureView.h; sourceTree = "<group>"; };
+		18D3F9F619A3BB02007EF441 /* SSFPasswordGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPasswordGestureView.m; sourceTree = "<group>"; };
+		18D3F9F719A3BB02007EF441 /* SSFPasswordGestureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFPasswordGestureView.xib; sourceTree = "<group>"; };
+		18D3F9F819A3BB02007EF441 /* SSFPathLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPathLineLayer.h; sourceTree = "<group>"; };
+		18D3F9F919A3BB02007EF441 /* SSFPathLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPathLineLayer.m; sourceTree = "<group>"; };
+		18D3F9FD19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGesturePasswordSettingViewController.h; sourceTree = "<group>"; };
+		18D3F9FE19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGesturePasswordSettingViewController.m; sourceTree = "<group>"; };
+		18D3FA0219A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFLeftRightSwipeTableViewCell.h; sourceTree = "<group>"; };
+		18D3FA0319A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFLeftRightSwipeTableViewCell.m; sourceTree = "<group>"; };
+		18D3FA0419A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFLeftRightSwipeTableViewCell.xib; sourceTree = "<group>"; };
 		18E4C0F11989954B001487B1 /* ZDQAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQAViewController.h; sourceTree = "<group>"; };
 		18E4C0F21989954B001487B1 /* ZDQAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQAViewController.m; sourceTree = "<group>"; };
 		18E4C0F419899944001487B1 /* ZDProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDProductsListViewController.h; sourceTree = "<group>"; };
@@ -122,11 +138,6 @@
 		18EAFEAB198703D90048B709 /* User+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Create.m"; sourceTree = "<group>"; };
 		FF44738C19835C53001B38DD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		FF44738D19835C53001B38DD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		FF4473961991D1A2001B38DD /* SSFPasswordGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPasswordGestureView.h; sourceTree = "<group>"; };
-		FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPasswordGestureView.m; sourceTree = "<group>"; };
-		FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFPasswordGestureView.xib; sourceTree = "<group>"; };
-		FF4473991991D1A2001B38DD /* SSFPathLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPathLineLayer.h; sourceTree = "<group>"; };
-		FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPathLineLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +246,7 @@
 		18B976AA197D95BC00641204 /* CrmApp */ = {
 			isa = PBXGroup;
 			children = (
+				18D3FA0819A3C903007EF441 /* GesturePassword */,
 				18EAFEA519830C090048B709 /* Utils */,
 				18AE6D841982B4CC004CA597 /* DataAccess */,
 				18AE6D701981AFA9004CA597 /* Storyboard */,
@@ -314,8 +326,6 @@
 		18C748EB197EC93A00F70F84 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */,
-				18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */,
 				18C748E4197EC81A00F70F84 /* ZDFirstLoginViewController.h */,
 				18C748E5197EC81A00F70F84 /* ZDFirstLoginViewController.m */,
 			);
@@ -331,6 +341,39 @@
 			name = Store;
 			sourceTree = "<group>";
 		};
+		18D3F9F419A3BB02007EF441 /* SSFGesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				18D3F9F519A3BB02007EF441 /* SSFPasswordGestureView.h */,
+				18D3F9F619A3BB02007EF441 /* SSFPasswordGestureView.m */,
+				18D3F9F719A3BB02007EF441 /* SSFPasswordGestureView.xib */,
+				18D3F9F819A3BB02007EF441 /* SSFPathLineLayer.h */,
+				18D3F9F919A3BB02007EF441 /* SSFPathLineLayer.m */,
+			);
+			path = SSFGesturePassword;
+			sourceTree = "<group>";
+		};
+		18D3FA0119A3C168007EF441 /* SSFLeftRightSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				18D3FA0219A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.h */,
+				18D3FA0319A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.m */,
+				18D3FA0419A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.xib */,
+			);
+			path = SSFLeftRightSwipeCell;
+			sourceTree = "<group>";
+		};
+		18D3FA0819A3C903007EF441 /* GesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				18D3F9FD19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.h */,
+				18D3F9FE19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m */,
+				18C748E0197EC7F700F70F84 /* ZDGestureLoginViewController.h */,
+				18C748E1197EC7F700F70F84 /* ZDGestureLoginViewController.m */,
+			);
+			name = GesturePassword;
+			sourceTree = "<group>";
+		};
 		18E4C0ED198994BC001487B1 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +381,8 @@
 				18C748F1197ED5C300F70F84 /* ZDSettingViewController.m */,
 				18E4C0F11989954B001487B1 /* ZDQAViewController.h */,
 				18E4C0F21989954B001487B1 /* ZDQAViewController.m */,
+				18D3F9F119A3B4B7007EF441 /* ZDSuggestionViewController.h */,
+				18D3F9F219A3B4B7007EF441 /* ZDSuggestionViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -410,21 +455,10 @@
 		FF447382198353D2001B38DD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF4473951991D1A2001B38DD /* SSFGesturePassword */,
+				18D3FA0119A3C168007EF441 /* SSFLeftRightSwipeCell */,
+				18D3F9F419A3BB02007EF441 /* SSFGesturePassword */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		FF4473951991D1A2001B38DD /* SSFGesturePassword */ = {
-			isa = PBXGroup;
-			children = (
-				FF4473961991D1A2001B38DD /* SSFPasswordGestureView.h */,
-				FF4473971991D1A2001B38DD /* SSFPasswordGestureView.m */,
-				FF4473981991D1A2001B38DD /* SSFPasswordGestureView.xib */,
-				FF4473991991D1A2001B38DD /* SSFPathLineLayer.h */,
-				FF44739A1991D1A2001B38DD /* SSFPathLineLayer.m */,
-			);
-			path = SSFGesturePassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,7 +543,8 @@
 			files = (
 				18AE6D731981AFF4004CA597 /* Main_iPad.storyboard in Resources */,
 				18D3F9F019A3A4D4007EF441 /* Images.xcassets in Resources */,
-				FF44739C1991D1A2001B38DD /* SSFPasswordGestureView.xib in Resources */,
+				18D3F9FB19A3BB02007EF441 /* SSFPasswordGestureView.xib in Resources */,
+				18D3FA0619A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.xib in Resources */,
 				18B976B8197D95BC00641204 /* Main_iPhone.storyboard in Resources */,
 				18B976AF197D95BC00641204 /* InfoPlist.strings in Resources */,
 			);
@@ -533,18 +568,19 @@
 				18EAFEAC198703D90048B709 /* User+Create.m in Sources */,
 				18AE6D761981DBAE004CA597 /* ZDAppDelegate+MOC.m in Sources */,
 				18E4C10619903AD4001487B1 /* ZDMainStore.m in Sources */,
-				FF44739B1991D1A2001B38DD /* SSFPasswordGestureView.m in Sources */,
 				18C748EF197ECC4E00F70F84 /* ZDLoginStore.m in Sources */,
-				FF44739D1991D1A2001B38DD /* SSFPathLineLayer.m in Sources */,
+				18D3F9FF19A3BF3C007EF441 /* ZDGesturePasswordSettingViewController.m in Sources */,
 				18B976C1197D95BC00641204 /* ZDBusinessesListViewController.m in Sources */,
 				18B976BE197D95BC00641204 /* ZDPotentialCustomersListViewController.m in Sources */,
 				18E4C10C19904A81001487B1 /* ContactRecord.m in Sources */,
 				FF44738E19835C53001B38DD /* User.m in Sources */,
 				18AE6D871982D98A004CA597 /* ZDCrmRepository.m in Sources */,
 				18E4C0F31989954B001487B1 /* ZDQAViewController.m in Sources */,
+				18D3FA0519A3C168007EF441 /* SSFLeftRightSwipeTableViewCell.m in Sources */,
 				18E4C0F91989A139001487B1 /* ZDProductDetailViewController.m in Sources */,
 				18B976B5197D95BC00641204 /* ZDAppDelegate.m in Sources */,
 				18EAFEA11983021B0048B709 /* JSONKit.m in Sources */,
+				18D3F9FC19A3BB02007EF441 /* SSFPathLineLayer.m in Sources */,
 				18C748E6197EC81A00F70F84 /* ZDFirstLoginViewController.m in Sources */,
 				18EAFEA41983045D0048B709 /* ZDCrmWebService.m in Sources */,
 				18B976B1197D95BC00641204 /* main.m in Sources */,
@@ -554,7 +590,9 @@
 				18C748E2197EC7F700F70F84 /* ZDGestureLoginViewController.m in Sources */,
 				18E4C0F619899944001487B1 /* ZDProductsListViewController.m in Sources */,
 				18E4C10F19904A82001487B1 /* Customer.m in Sources */,
+				18D3F9FA19A3BB02007EF441 /* SSFPasswordGestureView.m in Sources */,
 				18E4C10219903A41001487B1 /* ZDMainTabBarController.m in Sources */,
+				18D3F9F319A3B4B7007EF441 /* ZDSuggestionViewController.m in Sources */,
 				18C748F2197ED5C300F70F84 /* ZDSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

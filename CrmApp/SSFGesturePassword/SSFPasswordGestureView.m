@@ -10,7 +10,7 @@
 #import "SSFPathLineLayer.h"
 #import <math.h>
 
-#define SSFPointRaious 30
+#define SSFPointRaious 32
 
 @interface SSFPasswordGestureView()
 
@@ -39,7 +39,8 @@
 - (IBAction)firstPointButtonPressed:(UIButton *)sender
 {
     UIButton *startPointButton = (UIButton *)[self viewWithTag:sender.tag];
-    startPointButton.backgroundColor = [UIColor redColor];
+//    startPointButton.backgroundColor = [UIColor redColor];
+    startPointButton.selected = YES;
     self.startPoint = startPointButton.center;
     self.endPoint = self.startPoint;
 }
@@ -79,9 +80,10 @@
         }
         
         
-        //所有button变回最初颜色
+        //所有button变回最初状态
         for (UIButton *button in self.pointButtons) {
-            button.backgroundColor = [UIColor blackColor];
+//            button.backgroundColor = [UIColor blackColor];
+            button.selected = NO;
         }
         
         //属性初始化
@@ -117,11 +119,16 @@
                 }
                 break;
             case SSFPasswordGestureViewStateFinishDraw:
+            {
                 //完成第二次手绘密码,并与第一次密码相同
-                if ([self.delegate respondsToSelector:@selector(passwordGestureViewFinishSecondTimePassword:)]) {
-                    [self.delegate passwordGestureViewFinishSecondTimePassword:self];
+                NSString * gpd = [[NSUserDefaults standardUserDefaults] objectForKey:SSFSecondUserGesturePasswordKey];
+                if (gpd.length) {
+                    if ([self.delegate respondsToSelector:@selector(passwordGestureViewFinishSecondTimePassword:andPassword:)]) {
+                        [self.delegate passwordGestureViewFinishSecondTimePassword:self andPassword:gpd];
+                    }
                 }
                 break;
+            }
             case SSFPasswordGestureViewStateFinishWrong:
                 //第一次与第二次密码不一样
                 if ([self.delegate respondsToSelector:@selector(passwordGestureViewFinishWrongPassword:)]) {
@@ -129,11 +136,13 @@
                 }
                 break;
             case SSFPasswordGestureViewStateCheck:
+            {
                 //check手势密码成功
                 if ([self.delegate respondsToSelector:@selector(passwordGestureViewFinishCheckPassword:)]) {
                     [self.delegate passwordGestureViewFinishCheckPassword:self];
                 }
                 break;
+            }
             case SSFPasswordGestureViewStateCheckWrong:
                 //check手势密码失败
                 if ([self.delegate respondsToSelector:@selector(passwordGestureViewCheckPasswordWrong:)]) {
@@ -162,7 +171,7 @@
         CGFloat distance = sqrtf(powf(fabsf(point.x - buttonPoint.x) , 2) + powf(fabsf(point.y - buttonPoint.y) , 2));
         if (distance <= SSFPointRaious) {
             button.selected = YES;
-            button.backgroundColor = [UIColor redColor];
+//            button.backgroundColor = [UIColor redColor];
             [self.unselectedButtons removeObject:button];
             [self.selectedButtons addObject:button];//完成一次绘制后要清空
             break;

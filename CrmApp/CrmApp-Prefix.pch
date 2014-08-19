@@ -17,6 +17,7 @@
 
 #define USER_NAME @"username"
 #define USER_ID @"userId"
+#define USER_GESTURE @"userGesture"
 #define iPhone_STORYBOARD @"Main_iPhone"
 #define iPad_STORYBOARD @"Main_iPad"
 #define MAIN_TAB_VIEWCONTROLLER @"MainTabViewController"
@@ -26,3 +27,6 @@
 #define API_URL @"https://api.ezendai.com/hera"
 
 #import "ZDAppDelegate.h"
+#import "SSFPasswordGestureView.h"
+#import "SSFLeftRightSwipeTableViewCell.h"
+//#import "SSFSegmentControl.h"
