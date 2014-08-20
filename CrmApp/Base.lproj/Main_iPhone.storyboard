@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dwL-2T-vcQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tBy-fm-73q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-Ir-xKp">
-                                <rect key="frame" x="0.0" y="108" width="320" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="一般"/>
-                                    <segment title="感兴趣"/>
-                                    <segment title="强烈"/>
-                                    <segment title="待归类"/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-sC-OlE">
-                                <rect key="frame" x="0.0" y="137" width="320" height="382"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-KH-7Q7">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rba-BN-wYV"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CZ4-MO-1fc" id="C2V-4b-qcJ"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-sC-OlE">
+                                <rect key="frame" x="0.0" y="108" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -36,16 +36,19 @@
                                     <outlet property="delegate" destination="CZ4-MO-1fc" id="z5I-9n-Sje"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-Uf-Hye">
-                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="CZ4-MO-1fc" id="vyK-rR-ohk"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g9a-sC-OlE" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="4tk-9e-97B"/>
+                            <constraint firstItem="j9F-KH-7Q7" firstAttribute="top" secondItem="s9W-kb-ARv" secondAttribute="bottom" id="D8Y-VV-1AJ"/>
+                            <constraint firstItem="j9F-KH-7Q7" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="Gus-KO-dYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="g9a-sC-OlE" secondAttribute="trailing" id="J18-WY-ht6"/>
+                            <constraint firstItem="g9a-sC-OlE" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="Up2-Cu-46q"/>
+                            <constraint firstAttribute="trailing" secondItem="j9F-KH-7Q7" secondAttribute="trailing" id="VND-Uw-xDq"/>
+                            <constraint firstItem="dtj-EO-iXF" firstAttribute="top" secondItem="g9a-sC-OlE" secondAttribute="bottom" id="dGa-9C-Qne"/>
+                            <constraint firstItem="g9a-sC-OlE" firstAttribute="top" secondItem="j9F-KH-7Q7" secondAttribute="bottom" id="thN-0l-ctc"/>
+                            <constraint firstItem="dtj-EO-iXF" firstAttribute="top" secondItem="g9a-sC-OlE" secondAttribute="bottom" id="zPc-2P-YNZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="机会" id="fzp-Xk-bcm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Sjq-hh-8L0">
@@ -55,18 +58,19 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchBar" destination="dLo-Uf-Hye" id="0P7-6l-Lt4"/>
-                        <outlet property="searchDisplayController" destination="jSS-EQ-2kK" id="7BH-cV-D6C"/>
+                        <outlet property="searchBar" destination="j9F-KH-7Q7" id="ljV-j6-HqT"/>
+                        <outlet property="searchDisplayController" destination="2My-iL-Vqf" id="LPQ-pc-ZAW"/>
                         <outlet property="tableView" destination="g9a-sC-OlE" id="swL-yV-kLk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="jSS-EQ-2kK">
+                <searchDisplayController id="2My-iL-Vqf">
                     <connections>
-                        <outlet property="delegate" destination="CZ4-MO-1fc" id="tMU-GL-xAh"/>
-                        <outlet property="searchContentsController" destination="CZ4-MO-1fc" id="08Y-fO-jAd"/>
-                        <outlet property="searchResultsDataSource" destination="CZ4-MO-1fc" id="CNQ-FR-qeq"/>
-                        <outlet property="searchResultsDelegate" destination="CZ4-MO-1fc" id="8cX-a3-0Zp"/>
+                        <outlet property="delegate" destination="CZ4-MO-1fc" id="Aqg-sb-4sX"/>
+                        <outlet property="searchBar" destination="j9F-KH-7Q7" id="L0G-17-lkG"/>
+                        <outlet property="searchContentsController" destination="CZ4-MO-1fc" id="nlA-hx-gOn"/>
+                        <outlet property="searchResultsDataSource" destination="CZ4-MO-1fc" id="20c-nF-4a4"/>
+                        <outlet property="searchResultsDelegate" destination="CZ4-MO-1fc" id="HUW-Ws-BaJ"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -792,6 +796,53 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
             </objects>
             <point key="canvasLocation" x="1697" y="2010"/>
         </scene>
+        <!--Potential Customers List View Controller-->
+        <scene sceneID="FNZ-fH-xhA">
+            <objects>
+                <viewController id="tBy-fm-73q" customClass="ZDPotentialCustomersListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i8I-EZ-qe9"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAu-Co-6FC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZMv-JK-7Fj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-Df-qx1">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tBy-fm-73q" id="pLb-Rj-Gzf"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97r-uB-ySH">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchBar" destination="X6h-Df-qx1" id="la8-61-2H5"/>
+                        <outlet property="searchDisplayController" destination="2uk-Cq-jcd" id="olh-jm-waM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSB-1s-ia1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="2uk-Cq-jcd">
+                    <connections>
+                        <outlet property="delegate" destination="tBy-fm-73q" id="Dfh-0S-qGk"/>
+                        <outlet property="searchBar" destination="X6h-Df-qx1" id="ucI-qc-qfp"/>
+                        <outlet property="searchContentsController" destination="tBy-fm-73q" id="tZ9-5j-QVM"/>
+                        <outlet property="searchResultsDataSource" destination="tBy-fm-73q" id="OYJ-Qx-6G3"/>
+                        <outlet property="searchResultsDelegate" destination="tBy-fm-73q" id="rYo-sh-xVP"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-2662" y="378"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="S3n-48-4Ad">
             <objects>
@@ -1361,9 +1412,9 @@ A:通过，该产品的理财收益一般为每月还款日发放，到期可选
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="C7J-l2-0SF"/>
         <segue reference="fgk-qZ-CGI"/>
         <segue reference="Yby-lR-yU5"/>
         <segue reference="Ees-Yc-wSY"/>
-        <segue reference="KH6-AD-tLN"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -36,7 +36,8 @@
 {
     SSFLeftRightSwipeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SSFLeftRightSwipeTableViewCell" forIndexPath:indexPath];
     cell.delegate = self;
-    
+    cell.interestLabel.text = @"一般";
+
     return cell;
 }
 

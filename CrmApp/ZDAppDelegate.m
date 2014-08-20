@@ -47,7 +47,7 @@
                                                            }];
     // Set StatusBar appearance
     [UIApplication sharedApplication].statusBarHidden = NO;
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     
 }
 
